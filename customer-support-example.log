@@ -1,0 +1,44 @@
+
+> @couchbase-ecosystem/voltagent@0.1.0 preexample:customer-support
+> npm run build
+
+
+> @couchbase-ecosystem/voltagent@0.1.0 build
+> tsup
+
+CLI Building entry: src/index.ts, src/retriever.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /w/tsup.config.ts
+CLI Target: es2022
+CLI Cleaning output folder
+CJS Build start
+ESM Build start
+ESM dist/index.js         24.49 KB
+ESM dist/retriever.js     2.88 KB
+ESM dist/index.js.map     43.14 KB
+ESM dist/retriever.js.map 6.08 KB
+ESM ⚡️ Build success in 54ms
+CJS dist/retriever.cjs     3.91 KB
+CJS dist/index.cjs         26.08 KB
+CJS dist/retriever.cjs.map 6.11 KB
+CJS dist/index.cjs.map     43.77 KB
+CJS ⚡️ Build success in 64ms
+DTS Build start
+DTS ⚡️ Build success in 4786ms
+DTS dist/index.d.cts                   1.83 KB
+DTS dist/retriever.d.cts               1.42 KB
+DTS dist/vector-adapter-DO69PvbO.d.cts 5.90 KB
+DTS dist/index.d.ts                    1.83 KB
+DTS dist/retriever.d.ts                1.42 KB
+DTS dist/vector-adapter-DO69PvbO.d.ts  5.90 KB
+
+> @couchbase-ecosystem/voltagent@0.1.0 example:customer-support
+> node docs/examples/customer-support-rag.mjs
+
+Question: Can I return headphones I purchased 20 days ago?
+Top reference: Returns and refunds (returns-policy)
+Retrieved context:
+Document 1 (ID: returns-policy, Score: 1.0000):
+Customers may return headphones and other purchases within 30 days for a full refund.
+Verification: PASS
